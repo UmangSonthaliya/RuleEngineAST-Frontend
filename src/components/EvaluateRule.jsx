@@ -30,7 +30,7 @@ const EvaluateRule = () => {
         }, {});
 
         try {
-            const res = await axios.post('http://localhost:8080/rules/evaluate', {
+            const res = await axios.post('https://ruleengineast-backend.onrender.com/rules/evaluate', {
                 ruleId: parseInt(ruleId),
                 userData: transformedData
             });

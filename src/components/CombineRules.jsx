@@ -11,7 +11,7 @@ const CombineRules = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:8080/rules/combine', {
+            const res = await axios.post('https://ruleengineast-backend.onrender.com/rules/combine', {
                 ruleId1,
                 ruleId2,
                 operator: combinationOperator,

@@ -30,7 +30,8 @@ const CreateRule = () => {
         }, {});
 
         try {
-            const res = await axios.post('http://localhost:8080/rules/create', {
+            const res = await axios.post('https://ruleengineast-backend.onrender.com/rules/create', {
+
                 ruleName,
                 ruleString,
                 userData: JSON.stringify(transformedData) // Convert userData to a JSON string
